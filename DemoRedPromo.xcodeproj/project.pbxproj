@@ -15,6 +15,11 @@
 		50E7303C2633279B001E05D3 /* AllNewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7303B2633279B001E05D3 /* AllNewsListViewController.swift */; };
 		50E7303F263327BC001E05D3 /* FavouriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7303E263327BC001E05D3 /* FavouriteListViewController.swift */; };
 		50E73042263327CF001E05D3 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E73041263327CF001E05D3 /* DetailsViewController.swift */; };
+		50E7304F26332BCB001E05D3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7304E26332BCB001E05D3 /* NetworkManager.swift */; };
+		50E7305426332C8E001E05D3 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7305326332C8E001E05D3 /* NewsItem.swift */; };
+		50E7305C26368A84001E05D3 /* CustemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7305B26368A84001E05D3 /* CustemTableViewCell.swift */; };
+		50E7305F26368B8A001E05D3 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7305E26368B8A001E05D3 /* ImageManager.swift */; };
+		50E7306326373839001E05D3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7306226373839001E05D3 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		50E7303B2633279B001E05D3 /* AllNewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllNewsListViewController.swift; sourceTree = "<group>"; };
 		50E7303E263327BC001E05D3 /* FavouriteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListViewController.swift; sourceTree = "<group>"; };
 		50E73041263327CF001E05D3 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		50E7304E26332BCB001E05D3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		50E7305326332C8E001E05D3 /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
+		50E7305B26368A84001E05D3 /* CustemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustemTableViewCell.swift; sourceTree = "<group>"; };
+		50E7305E26368B8A001E05D3 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		50E7306226373839001E05D3 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +70,12 @@
 		50E7301626332451001E05D3 /* DemoRedPromo */ = {
 			isa = PBXGroup;
 			children = (
+				50E7305226332C22001E05D3 /* Models */,
+				50E7304D26332B92001E05D3 /* Services */,
+				50E7304A26332B4D001E05D3 /* Storyboard */,
 				50E7304426332903001E05D3 /* Supporting Files */,
 				50E7302E2633250F001E05D3 /* ViewControllers */,
-				50E7301726332451001E05D3 /* AppDelegate.swift */,
-				50E7301926332451001E05D3 /* SceneDelegate.swift */,
-				50E7301D26332451001E05D3 /* Main.storyboard */,
 				50E7302026332452001E05D3 /* Assets.xcassets */,
-				50E7302226332452001E05D3 /* LaunchScreen.storyboard */,
-				50E7302526332452001E05D3 /* Info.plist */,
 			);
 			path = DemoRedPromo;
 			sourceTree = "<group>";
@@ -78,6 +86,7 @@
 				50E7303B2633279B001E05D3 /* AllNewsListViewController.swift */,
 				50E7303E263327BC001E05D3 /* FavouriteListViewController.swift */,
 				50E73041263327CF001E05D3 /* DetailsViewController.swift */,
+				50E7305B26368A84001E05D3 /* CustemTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -85,8 +94,38 @@
 		50E7304426332903001E05D3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				50E7301926332451001E05D3 /* SceneDelegate.swift */,
+				50E7301726332451001E05D3 /* AppDelegate.swift */,
+				50E7302526332452001E05D3 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50E7304A26332B4D001E05D3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				50E7302226332452001E05D3 /* LaunchScreen.storyboard */,
+				50E7301D26332451001E05D3 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		50E7304D26332B92001E05D3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				50E7304E26332BCB001E05D3 /* NetworkManager.swift */,
+				50E7305E26368B8A001E05D3 /* ImageManager.swift */,
+				50E7306226373839001E05D3 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		50E7305226332C22001E05D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50E7305326332C8E001E05D3 /* NewsItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +198,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50E7305C26368A84001E05D3 /* CustemTableViewCell.swift in Sources */,
+				50E7306326373839001E05D3 /* DataManager.swift in Sources */,
+				50E7304F26332BCB001E05D3 /* NetworkManager.swift in Sources */,
+				50E7305426332C8E001E05D3 /* NewsItem.swift in Sources */,
+				50E7305F26368B8A001E05D3 /* ImageManager.swift in Sources */,
 				50E7303F263327BC001E05D3 /* FavouriteListViewController.swift in Sources */,
 				50E7303C2633279B001E05D3 /* AllNewsListViewController.swift in Sources */,
 				50E7301826332451001E05D3 /* AppDelegate.swift in Sources */,
@@ -312,7 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 63KQRTRZ55;
-				INFOPLIST_FILE = DemoRedPromo/Info.plist;
+				INFOPLIST_FILE = "DemoRedPromo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,7 +375,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 63KQRTRZ55;
-				INFOPLIST_FILE = DemoRedPromo/Info.plist;
+				INFOPLIST_FILE = "DemoRedPromo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
